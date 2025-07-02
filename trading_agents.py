@@ -96,7 +96,7 @@ def get_gemini_news_summary(stock: str) -> str:
 
         # Check if the response has text content
         if response.candidates and response.candidates[0].content and response.candidates[0].content.parts:
-            return "Ticker: {stock} news: " + response.candidates[0].content.parts[0].text
+            return f"Ticker: {stock} news: " + response.candidates[0].content.parts[0].text
         else:
             print(f"      Warning: Gemini API returned an empty or malformed response. Debug info: {response}")
             return "Could not generate summary from Gemini API (empty response)."
@@ -202,7 +202,7 @@ class ManagerAgent(StockAgent):
 def run_trading_agents(ticker):
     print(f"--- Running Trading Agents for {ticker} ---")
 
-    # 1. Fetch data for the past week
+    # 1. Fetch data for the past week (this is very small window so adjust for 'better' view of stock
     stock_data = get_stock_data(ticker, period="1wk", interval="1d")
     stock_news = get_gemini_news_summary(ticker)
     print(stock_news)
@@ -234,7 +234,7 @@ def run_trading_agents(ticker):
 # --- Example Usage ---
 if __name__ == "__main__":
     # You can change the ticker symbol here
-    stock_symbol = "CNC" # Microsoft
+    stock_symbol = "CNC" 
     # stock_symbol = "AAPL" # Apple
     # stock_symbol = "GOOGL" # Google
 
