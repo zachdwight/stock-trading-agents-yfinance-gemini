@@ -71,9 +71,9 @@ python trading_agents.py
 
 ## Sample Output (AAPL)
 
-Note, I did change the yfinance stock query: 
+Note, I did change the yfinance stock query from 1wk to 1mo: 
 ```python
-    # 1. Fetch data for the past week
+    # 1. Fetch data for the past MONTH
     stock_data = get_stock_data(ticker, period="1mo", interval="1d")
 ```
 
