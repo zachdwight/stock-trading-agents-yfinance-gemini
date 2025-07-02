@@ -31,8 +31,8 @@ The system operates in the following steps:
 
 1.  **Clone the repository (or copy the code):**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone https://github.com/zachdwight/stock-trading-agents-yfinance-gemini.git
+    cd stock-trading-agents-yfinance-gemini
     ```
 
 2.  **Install the required libraries:**
@@ -66,4 +66,4 @@ The system operates in the following steps:
 To run the trading agents, simply execute the Python script. You can change the `stock_symbol` variable in the `if __name__ == "__main__":` block to analyze a different stock.
 
 ```bash
-python your_script_name.py
+python trading_agents.py
