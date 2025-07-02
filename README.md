@@ -75,7 +75,7 @@ Note, I did change the yfinance stock query:
 ```python
     # 1. Fetch data for the past week
     stock_data = get_stock_data(ticker, period="1mo", interval="1d")
-```bash
+```
 
 ```bash
 --- Running Trading Agents for AAPL ---
