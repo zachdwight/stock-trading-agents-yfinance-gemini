@@ -9,9 +9,6 @@ This project demonstrates a simple multi-agent system for analyzing stock data a
 * **Manager Agent:** A `ManagerAgent` consolidates the reports from the bull and bear agents, along with recent news (summarized by Gemini), and provides a final buy, hold, or sell recommendation.
 * **Google Gemini Integration:** Leverages the Gemini API for natural language understanding and generation, providing insightful summaries and recommendations.
 
-<img width="800"  alt="image" src="https://github.com/user-attachments/assets/b62d025a-55b1-4c2a-83ad-4bf60e789f08" />
-
-
 ## How it Works
 
 The system operates in the following steps:
@@ -22,6 +19,10 @@ The system operates in the following steps:
     * The **`BullMarketAgent`** analyzes the stock data for potential bullish indicators (e.g., price increases, high volume on up days).
     * Both agents use the `get_gemini_summary` function to generate human-readable summaries of their findings from their respective perspectives.
 3.  **Manager Decision:** The **`ManagerAgent`** takes the summaries from both the bull and bear agents, along with the news summary, and uses the `get_gemini_manager_summary` function to synthesize this information into a final trading recommendation (buy, hold, or sell) for the next 90 days.
+
+<p align="center">
+<img width="800"  alt="image" src="https://github.com/user-attachments/assets/b62d025a-55b1-4c2a-83ad-4bf60e789f08" />
+</p>
 
 ## Setup and Installation
 
