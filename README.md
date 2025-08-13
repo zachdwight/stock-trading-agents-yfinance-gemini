@@ -1,6 +1,8 @@
 # AI Stock Trading Agents
 
-This project demonstrates a simple multi-agent system for analyzing stock data and generating trading recommendations using the Google Gemini API, `yfinance` for stock data retrieval, and `pandas` for data manipulation.  Keep in mind to make this truly agentic, you could let the manager agent monitor the stock market continuously for 'opportunities' (such as a blue-chip suffering a 5% dip), retrieve opinions from bear/bull agents (which you can augment however you'd like) and then have the ability (API) to sell/buy/hold actual stocks in a portfolio.  Though it does sound cool, I do not recommend this and you should always utilize a human-in-the-loop step in such a system and speak to a financial advisor before pursuing financial products or trading stocks.
+This project demonstrates a simple multi-agent system for analyzing stock data and generating trading recommendations using the Google Gemini API, `yfinance` for stock data retrieval, and `pandas` for data manipulation.  
+
+Keep in mind to make this truly agentic, you could let the manager agent monitor the stock market continuously for 'opportunities' (such as a blue-chip suffering a 5% dip), retrieve opinions from bear/bull agents (which you can augment however you'd like) and then have the ability (API) to sell/buy/hold actual stocks in a portfolio.  Though it does sound cool, I do not recommend this and you should always utilize a human-in-the-loop step in such a system and speak to a financial advisor before pursuing financial products or trading stocks.
 
 ## Features
 
